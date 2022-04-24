@@ -1,0 +1,24 @@
+﻿@using Ictshop.Models;
+@model List<Sanpham>
+<div class="row" >
+    @foreach (var item in Model)
+    {
+        <div class="col-md-3 col-sm-6" style="margin-top: 60px">
+            <a href="@Url.Action("xemchitiet", new {@Masp=item.Masp })">
+                <img src=@Url.Content("~/HinhanhSP/" + item.Anhbia) class="img-responsive" alt=""style=" width: 340px; height: 260px; object-fit: cover;" />
+            </a>
+                <center>
+                    <h3> @item.Tensp</h3>
+                    <h3 style="color:red">Giá: @item.Giatien</h3>
+                    <br />
+                    @using (Html.BeginForm("ThemGioHang", "GioHang", new { @iMasp = item.Masp, @strURL = Request.Url.ToString() }))
+                    {
+                        <input type="submit" value="Mua hàng" id="bgnGioHang" />
+                    }
+                    @*<h4> <a href="@Url.Action("xemchitiet", new {@Masp=item.Masp })">Xem chi tiết</a></h4>*@
+                </center>
+        </div>
+    }
+</div>
+
+

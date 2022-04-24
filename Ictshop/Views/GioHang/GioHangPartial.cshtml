@@ -1,0 +1,23 @@
+﻿<style type="text/css">
+    .giohang {
+        color: white;
+        font-size: large;
+        margin-bottom: -100px !important;
+        text-decoration-line: none !important;
+    }
+    .giohang:hover{
+        color: black !important;
+    }
+
+</style>
+
+
+
+<a href="@Url.Action("GioHang","GioHang")" class="giohang">
+    <button class="btn" style="float:right; margin-top:10px; margin-right: 12px" type="submit">
+        Giỏ hàng
+        <i class="fa fa-shopping-cart"></i>
+        (@ViewBag.TongSoLuong)
+    </button>
+</a>
+
