@@ -71,7 +71,6 @@ namespace Ictshop.Controllers
                     ViewBag.Fail = "Đăng nhập thất bại";
                     return View("Dangnhap");
                 }
-
         }
         public ActionResult DangXuat()
         {
@@ -79,7 +78,5 @@ namespace Ictshop.Controllers
             return RedirectToAction("Index","Home");
 
         }
-
-
     }
 }
