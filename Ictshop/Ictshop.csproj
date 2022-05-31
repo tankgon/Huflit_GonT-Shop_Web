@@ -211,18 +211,23 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Slide.css" />
+    <Content Include="Content\styles.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="HinhanhSP\3.jpg" />
+    <Content Include="HinhanhSP\app-store-badge.svg" />
     <Content Include="HinhanhSP\ban1.jpg" />
     <Content Include="HinhanhSP\ban2.jpg" />
+    <Content Include="HinhanhSP\demo-screen.mp4" />
+    <Content Include="HinhanhSP\google-play-badge.svg" />
     <Content Include="HinhanhSP\ip3.jpg" />
     <Content Include="HinhanhSP\ip4.jpg" />
     <Content Include="HinhanhSP\ip5.jpg" />
     <Content Include="HinhanhSP\ip6.jpg" />
     <Content Include="HinhanhSP\ip7.jpg" />
+    <Content Include="HinhanhSP\portrait_black.png" />
     <Content Include="HinhanhSP\qc3.gif" />
     <Content Include="HinhanhSP\spnb1.png" />
     <Content Include="HinhanhSP\spnb2.png" />
@@ -237,6 +242,7 @@
     <Content Include="HinhanhSP\ss7.jfif" />
     <Content Include="HinhanhSP\ss8.jfif" />
     <Content Include="HinhanhSP\ss9.png" />
+    <Content Include="HinhanhSP\tnw-logo.svg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\Admin\Views\web.config" />
@@ -349,6 +355,7 @@
     <Content Include="Views\Home\Samsung.cshtml" />
     <Content Include="Views\Home\Apple.cshtml" />
     <Content Include="Views\Home\Xiaomi.cshtml" />
+    <Content Include="Views\Home\Search.cshtml" />
     <None Include="Web.Debug.Config">
       <DependentUpon>Web.Config</DependentUpon>
     </None>

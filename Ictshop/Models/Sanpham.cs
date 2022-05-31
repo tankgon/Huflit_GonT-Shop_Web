@@ -15,6 +15,8 @@ namespace Ictshop.Models
             Chitietdonhang = new HashSet<Chitietdonhang>();
         }
 
+  
+
         [Key]
         public int Masp { get; set; }
 

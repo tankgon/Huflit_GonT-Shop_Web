@@ -11,6 +11,15 @@ namespace Ictshop.Controllers
     {
         Qlbanhang db = new Qlbanhang();
 
+        
+
+
+
+        public List<Sanpham> SearchByKey(string key)
+        {
+            return db.Sanphams.SqlQuery("select * from Sanpham where Tensp like '%" + key+"%'").ToList(); 
+        }
+
         // GET: Sanpham
         public ActionResult dtiphonepartial()
         {
@@ -48,7 +57,6 @@ namespace Ictshop.Controllers
             }
             return View(chitiet);
         }
-
     }
 
 }

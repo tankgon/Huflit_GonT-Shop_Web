@@ -10,8 +10,12 @@ namespace Ictshop.Models
     {
         [Key]
         [Display(Name = "Email")]
+        [StringLength(10)]
         public string userMail { get; set; }
+
+
         [Display(Name = "Password")]
+        [StringLength(6)]
         public string password { get; set; }
     }
 }

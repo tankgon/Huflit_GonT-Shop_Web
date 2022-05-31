@@ -9,33 +9,11 @@ namespace Ictshop.Controllers
     public class HomeController : Controller
     {
 
-        public ActionResult Index()
-        {
-
-            return View();
-
-        }
-        public ActionResult Apple()
-        {
-       
-            return View();
-
-        }
-
-        public ActionResult Samsung()
-        {
-
-            return View();
-
-        }
-
-        public ActionResult Xiaomi()
-        {
-
-            return View();
-
-        }
-
+        public ActionResult Index() { return View(); }
+        public ActionResult Apple() { return View(); }
+        public ActionResult Samsung() { return View(); }
+        public ActionResult Xiaomi(){return View(); }
+        public ActionResult Search() { return View(); }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

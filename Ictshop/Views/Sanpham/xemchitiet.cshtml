@@ -14,13 +14,13 @@
         <img src="@Url.Content("~/HinhanhSP/" +@Model.Anhbia)" />
         <br />
         <h3> @Model.Tensp</h3>
-        <h3 style="color:red">Giá: @Model.Giatien</h3>
+        <h3 style="color:red">Giá: @String.Format("{0:0,0}", @Model.Giatien) VNĐ</h3>
         <br />
         @Model.Mota
         <br />
-        @using (Html.BeginForm("ThemGioHang","GioHang",new { @iMasp=Model.Masp, @strURL=Request.Url.ToString()}))
+        @using (Html.BeginForm("ThemGioHang", "GioHang", new { @iMasp = Model.Masp, @strURL = Request.Url.ToString() }))
         {
-                <input type="submit" value="Mua hàng" id="bgnGioHang" />
-        }      
+            <input type="submit" value="Mua hàng" id="bgnGioHang" />
+        }
     </div>
 </CENTER>
