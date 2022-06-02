@@ -15,9 +15,24 @@
 
 <a href="@Url.Action("GioHang","GioHang")" class="giohang">
     <button class="btn" style="float:right; margin-top:10px; margin-right: 12px" type="submit">
-        Giỏ hàng
-        <i class="fa fa-shopping-cart"></i>
-        (@ViewBag.TongSoLuong)
+        <i class="bi-cart-fill me-1"></i>
+        @if (@ViewBag.TongSoLuong >0)
+        {
+            <div style="
+    background-color:chocolate;
+    width:24px;
+    height:24px;
+    border-radius: 50%;
+    text-align:center;
+    position:absolute;
+    top:-16px;
+    right:-8px;
+    text-align:center;
+    padding-top:2px;
+    padding-right:2px
+    ">@ViewBag.TongSoLuong</div>
+}
+
     </button>
 </a>
 

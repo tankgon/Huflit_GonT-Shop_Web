@@ -326,15 +326,18 @@ section.cta:before {
   }
 }
 @media (min-width: 992px) {
-  .features-device-mockup .circle {
-    width: 90%;
-    left: -25%;
-  }
-  .features-device-mockup .shape-1 {
-    top: 5%;
-    right: -15%;
-  }
-  .features-device-mockup .shape-2 {
-    bottom: 10%;
-    left: -10%;
-  }
+    .features-device-mockup .circle {
+        width: 90%;
+        left: -25%;
+    }
+
+    .features-device-mockup .shape-1 {
+        top: 5%;
+        right: -15%;
+    }
+
+    .features-device-mockup .shape-2 {
+        bottom: 10%;
+        left: -10%;
+    }
+}
